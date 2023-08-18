@@ -7,6 +7,14 @@ export const getName = (first: string, last?: string) => {
   return first;
 };
 
+// string[], shows it is an array of strings. So when we want to spread out our array of other args, this is how we do it, say what types are in the array
+// export const getName = (first: string, ...otherNames: string[]) => {
+//   if (otherNames[0]) {
+//     return `${first} ${otherNames[0]}`;
+//   }
+//   return first;
+// };
+
 it("Should work with just the first name", () => {
   const name = getName("Matt");
 
