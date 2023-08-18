@@ -8,7 +8,7 @@ interface User {
    * - 'user'
    * - 'super-admin'
    */
-  role: string;
+  role: "user" | "admin" | "super-admin";
 }
 
 export const defaultUser: User = {
